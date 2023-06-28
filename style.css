@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: hsl(218, 23%, 16%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    width: 90%;
+    max-width: 465px;
+    background-color: hsl(217, 19%, 24%);
+    margin: 0 auto;
+    padding: 4rem 3rem 4rem 3rem;
+    text-align: center;
+    border-radius: 1.5rem;
+    position: relative;
+}
+
+.container h3 {
+    color: hsl(150, 100%, 66%);
+    margin-bottom: 2rem;
+    letter-spacing: .5rem;
+    text-transform: uppercase;
+}
+
+.container p {
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: hsl(193, 38%, 86%);
+}
+
+.container .divider {
+    margin: 3rem 0 2rem 0;
+}
+
+.btn {
+    padding: 2rem;
+    background-color: rgb(82, 255, 168);
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    position: absolute;
+    left: 50%;
+    bottom:0%;
+    transform: translate(-50%,50%);
+    width: 6rem;
+    height: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn:hover {
+    cursor: pointer;
+    box-shadow: rgba(82, 255, 168, 0.56) 0px 5px 40px 4px;
+}
+
+@media (min-width: 465px) {
+    .container .divider {
+        content: url(./images/pattern-divider-desktop.svg);
+    }
+}
